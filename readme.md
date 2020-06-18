@@ -19,6 +19,8 @@ What you see the beginning is a *terminal prompt*
 
 You usually will see username@hostname the : sign and the name of a directory you are currently in. ~ sign means that you are in *home* directory.
 
+If I can teach you one thing during this workshop it is to really carefully read the output of the commands as in many situations the program will inform you what is going wrong.
+
 `pwd #show current working directory.`
 
 `ls #list directory contents`
@@ -178,6 +180,16 @@ This is particularly useful when we want to substitute some string that follows 
 
 The patterns can use regex, and you have access to the result.
 
+### awk
+
+Awk is a program that works with *tabular* data
+
+`awk  '{print $2}' short.gff3` will print the second column of a file (by default separated by space or tabs)
+`awk  '{print $4+$5}' short.gff3` will add and print columns 4 and 5
+
+`awk '{ if ($3 == "intron") { print } }' short.gff3` will print the whole row but only if third column equals intron
+
+Generally I suggest moving to Python Pandas or R if you are doing something more ambitions with tabular data.
 ## Piping
 
 Piping is a way to do things with *streams* of data. Most of Linux terminal programs output streams of data and can use streams of data coming from other applications as input.
