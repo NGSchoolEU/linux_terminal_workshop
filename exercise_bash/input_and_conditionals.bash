@@ -3,7 +3,7 @@ echo "what is your name?"
 read name
 echo "hello $name"
 
-if [ $1 = "secret" ]; then
+if [ "$1" == "secret" ]; then
     echo "you found a secret!"
 else
     echo "nothing to add"
