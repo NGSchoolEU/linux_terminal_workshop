@@ -1,6 +1,6 @@
-#Basics of Linux Terminal and Bash
+# Basics of Linux Terminal and Bash
 
-##Why use terminal and Bash?
+## Why use terminal and Bash?
 
 Linux terminal is one of primary ways to interact with Linux system. This is because in enables commanding the system in a very good way -- precise, repeatable and explainable. 
 The name means that you access the system through typing commands and receiving input as a text, usually displayed on the screen. Compared to using a GUI - a Windows-like interaction here instead of gestures and images you use words and symbols. 
@@ -9,7 +9,7 @@ While terminal itself is just a name for a type of access, not neccessarely a fu
 
 The most popular shell is bash and we will be using it thoughout this workshop.
 
-##Navigating in (Bash) terminal
+## Navigating in (Bash) terminal
 
 
 `pwd #show current working directory`
@@ -44,7 +44,7 @@ You can use ! to repeat commands
 
 
 
-##Working with files and directories
+## Working with files and directories
 
 It is good to know what to do with files and directories in the Linux system especially as nearly everything can be accessed that way
 
@@ -90,7 +90,7 @@ and finally the name of the file.
 `ln -s` make symbolic link
 
 
-##Terminal programs
+## Terminal programs
 
 There are many of fantastic programs accessable through terminal, many of them already part of the GNU-Linux System. 
 
@@ -107,7 +107,7 @@ There are many of fantastic programs accessable through terminal, many of them a
 and finally 
 `cowsay` is a program to make cow say what you want
 
-##Programs for text analysys
+## Programs for text analysys
 
 Where Linux is most powerfull is with commands tha work on streams of data, particulary text.
 This is also what a lot of scientific data looks like -- some analaysys program or device outputing a large text file.
@@ -125,7 +125,7 @@ This is also what a lot of scientific data looks like -- some analaysys program 
 
 
 
-##Piping
+## Piping
 
 Piping is a way to do things with *streams* of data. Most of Linux terminal programs output streams of data and can use streams of data coming from other programs as input.
 
@@ -147,7 +147,7 @@ There can be whole chains of commands, we can add another program (word count) t
 
 
 
-##Bash language and scripts
+## Bash language and scripts
 
 The Bash is also a scripting language, that can be very usefull particularly when working on sets of files -- I do not reccomend it for a general computation as it can be quite tricky.
 
@@ -171,7 +171,7 @@ When writing scripts, you usually create a file with .bash or .sh extension, sta
 
 
 
-##Wrapup
+## Wrapup
 
 This was just a small introduction to the powerfull terminal tools of a Linux system.
 Linux continues philosophy coming from UNIX of having small, specialized tools with their own mini-languages (like grep or awk) that user can connect one to another using pipes.
