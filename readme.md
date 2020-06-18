@@ -70,7 +70,7 @@ Let's understand the output.
 
 crw-rw-rw-   1 root root        1,   8 cze 12 12:25 random
 
-first is a file type (b,c is a block, special character file, - is a regular file, d is dir l is link. (More can be found here)[https://linuxize.com/post/how-to-list-files-in-linux-using-the-ls-command/])
+first is a file type (b,c is a block, special character file, - is a regular file, d is dir l is link. [More can be found here](https://linuxize.com/post/how-to-list-files-in-linux-using-the-ls-command/)
 
 then there are permissions. This is an important concept as files and directories can be used by multiple users. There are three main permissions, to read write and to execute. It the case above the user can read and write, also the group that the user is as well as others.
 
@@ -177,6 +177,8 @@ This is particularly useful when we want to substitute some string that follows 
 
 `sed "s/like/love/" random_likes.txt` will take every first occurrence of like in a line and substitute it with love
 `sed "s/like/love/g" random_likes.txt` will replace all
+`sed '1d' random_likes.txt` will delete first line
+`sed "/don't/d" random_likes.txt` will delete line with don't
 
 The patterns can use regex, and you have access to the result.
 
@@ -257,23 +259,22 @@ This will take first *argument* and compare it to the word "secret"
 ### loops
 
 We can take input from another command and use it line-for-line
-`
-for name in $(cat names.txt)
+
+
+`for name in $(cat names.txt)
 do
 
     echo "her name was $name"
-done
-`
+done`
 
 Or we can use the glob.
 
-`
-for file in *
+`for file in *
 do
     echo "this is a file: $file"
     echo ";)"
-done
-`
+done`
+
 this will echo for each file in a directory
 
 
@@ -284,4 +285,5 @@ This was just a small introduction to the powerful terminal tools of a Linux sys
 Linux continues philosophy coming from UNIX of having small, specialized tools with their own mini-languages (like grep or awk) that user can connect one to another using pipes.
 Using Linux system to the maximum requires quite some time but will make you much faster and give you control.
 
+There is a lot more to show, so good luck on your adventure! 
 
