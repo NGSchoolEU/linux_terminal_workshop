@@ -247,11 +247,13 @@ You also need to change permissions to +x to enable execution.
 
 ### conditionals
 
-`if [ $1 = "secret" ]; then
+```
+if [ $1 = "secret" ]; then
     echo "you found a secret!"
 else
     echo "nothing to add"
-fi`
+fi
+```
 
 This will take first *argument* and compare it to the word "secret"
 
@@ -261,19 +263,23 @@ This will take first *argument* and compare it to the word "secret"
 We can take input from another command and use it line-for-line
 
 
-`for name in $(cat names.txt)
+```
+for name in $(cat names.txt)
 do
 
     echo "her name was $name"
-done`
+done
+```
 
 Or we can use the glob.
 
-`for file in *
+```
+for file in *
 do
     echo "this is a file: $file"
     echo ";)"
-done`
+done
+```
 
 this will echo for each file in a directory
 
